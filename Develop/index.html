@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -32,65 +33,64 @@
       <!-- Timeblocks go here -->
     <!-- 9AM -->
     </div>
-    <div id="9am">
+    <div class="time-block" id="9am">
       <p>9AM</p>
-      <textarea name="hour-9" id="9am-input" cols="30" rows="3"></textarea>
-      <button class="save-note">Save</button>
+      <textarea class="description" data-value="9" cols="30" row="3"></textarea>
+      <button class="col-sm-1 btn saveBtn fas fa-lock">Save</button>
     </div>
     
     <!-- 10AM -->
-    <div id="10am">
+    <div class="time-block" id="10am">
       <p>10AM</p>
-      <textarea name="hour-10" id="10am-input" cols="30" rows="3"></textarea>
-      <button class="save-note">Save</button>
+      <textarea class="description" data-value="10" cols="30" row="3"></textarea>
+      <button class="col-sm-1 btn saveBtn fas fa-lock">Save</button>
     </div>
 
     <!-- 11AM -->
-    <div id="11am">
+    <div class="time-block" id="11am">
       <p>11AM</p>
-      <textarea name="hour-11" id="11am-input" cols="30" rows="3"></textarea>
-      <button class="save-note">Save</button>
+      <textarea class="description" data-value="11" cols="30" row="3"></textarea>
+      <button class="col-sm-1 btn saveBtn fas fa-lock">Save</button>
     </div>
 
      <!-- 12AM -->
-     <div id="12am">
+     <div class="time-block" id="12am">
       <p>12AM</p>
-      <textarea name="hour-12" id="12am-input" cols="30" rows="3"></textarea>
-      <button class="save-note">Save</button>
-
+      <textarea class="description" data-value="12" cols="30" row="3"></textarea>
+      <button class="col-sm-1 btn saveBtn fas fa-lock">Save</button>
       <!-- 1PM -->
-     <div id="1pm">
+      <div class="time-block" id="1pm">
       <p>1PM</p>
-      <textarea name="hour-1" id="1pm-input" cols="30" rows="3"></textarea>
-      <button class="save-note">Save</button>
+      <textarea class="description" data-value="13" cols="30" row="3"></textarea>
+      <button class="col-sm-1 btn saveBtn fas fa-lock">Save</button>
 
      <!-- 2PM -->
-     <div id="2pm">
+     <div class="time-block" id="2pm">
       <p>2PM</p>
-      <textarea name="hour-2" id="2pm-input" cols="30" rows="3"></textarea>
-      <button class="save-note">Save</button>
+      <textarea class="description" data-value="14" cols="30" row="3"></textarea>
+      <button class="col-sm-1 btn saveBtn fas fa-lock">Save</button>
 
       <!-- 3PM -->
-     <div id="3pm">
+      <div class="time-block" id="3pm">
       <p>3PM</p>
-      <textarea name="hour-3" id="3pm-input" cols="30" rows="3"></textarea>
-      <button class="save-note">Save</button>
+      <textarea class="description" data-value="15" cols="30" row="3"></textarea>
+      <button class="col-sm-1 btn saveBtn fas fa-lock">Save</button>
 
       <!-- 4PM -->
-     <div id="4pm">
+      <div class="time-block" id="4pm">
       <p>4PM</p>
-      <textarea name="hour-4" id="4pm-input" cols="30" rows="3"></textarea>
-      <button class="save-note">Save</button>
+      <textarea class="description" data-value="16" cols="30" row="3"></textarea>
+      <button class="col-sm-1 btn saveBtn fas fa-lock">Save</button>
     </div>
 
     <!-- 5PM -->
-    <div id="5pm">
+    <div class="time-block" id="5pm">
       <p>5PM</p>
-      <textarea name="hour-5" id="5pm-input" cols="30" rows="3"></textarea>
-      <button class="save-note">Save</button>
+      <textarea class="description" data-value="17" cols="30" row="3"></textarea>
+      <button class="col-sm-1 btn saveBtn fas fa-lock">Save</button>
     </div>
 
-
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
