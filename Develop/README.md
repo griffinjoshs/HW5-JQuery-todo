@@ -1,5 +1,7 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
+CLick here to see the app: https://griffinjoshs.github.io/HW5-JQuery-todo/
+
 ## Built with jQuery
 
 * This application allows you to schedule your day and plan it according to each hour 
@@ -15,6 +17,7 @@
 * If the hour is in the present, its background color will turn red
 
 * If the hour is in the future, its background color will turn green
+
 
 
 
