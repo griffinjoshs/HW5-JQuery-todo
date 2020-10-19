@@ -45,6 +45,20 @@ if (localStorage.getItem("notes") === null) {
     })
 }
 })
+var storeCurrentHour = moment().hour(); // Number
 
+$(".time-block").each(function () {
+    var time = parseInt($(this).find(".description").attr("data-value"))
+    if (time < storeCurrentHour) {
+        $(this).addClass("past")
+    } else if (time === storeCurrentHour) {
+            $(this).addClass("present")
+            $(this).removeClass("past")
+    } else {
+        $(this).addClass("future")
+        $(this).removeClass("past")
+        $(this).removeClass("present")
+    }
+})
 
 
