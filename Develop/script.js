@@ -13,17 +13,17 @@ $(".saveBtn").on("click", function () {
         store: store
     };
 
-    var grandList = localStorage.getItem("notes");
+    var myList = localStorage.getItem("notes");
 
-    if (!grandList) {
-        grandList = []
+    if (!myList) {
+        myList = []
     } else {
-        grandList = JSON.parse(grandList);
+        myList = JSON.parse(myList);
     }
 
-    grandList.push(listOfItems);
+    myList.push(listOfItems);
 
-    localStorage.setItem("notes", JSON.stringify(grandList));
+    localStorage.setItem("notes", JSON.stringify(myList));
 
     console.log(listOfItems);
 
