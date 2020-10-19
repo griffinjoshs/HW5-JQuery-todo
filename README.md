@@ -2,9 +2,7 @@
 
 CLick here to see the app: https://griffinjoshs.github.io/HW5-JQuery-todo/
 
-<img src="assets/all green.png alt="img">
-
-![img](assets/all green.png);
+![Morning](/assets/morning-color.png)
 
 ## Built with jQuery
 
