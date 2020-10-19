@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(".saveBtn").on("click", function () {
         var value = $(this).siblings(".description").val();
         var store = $(this).siblings(".description").attr("data-value");
-        var listOfItems = {
+        var storageItems = {
             value: value,
             store: store
         };
@@ -13,9 +13,9 @@ $(document).ready(function () {
         } else {
             list = JSON.parse(list);
         }
-        list.push(listOfItems);
+        list.push(storageItems);
         localStorage.setItem("notes", JSON.stringify(list));
-        console.log(listOfItems);
+        console.log(storageItems);
     })
     if (localStorage.getItem("notes") === null) {
         return false;
