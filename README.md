@@ -2,6 +2,10 @@
 
 CLick here to see the app: https://griffinjoshs.github.io/HW5-JQuery-todo/
 
+<img src="assets/all green.png alt="img">
+
+![img](assets/all green.png);
+
 ## Built with jQuery
 
 * This application allows you to schedule your day and plan it according to each hour 
